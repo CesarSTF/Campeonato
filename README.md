@@ -151,5 +151,47 @@ LIGA
 ELIMINATORIA
 GRUPO
 Ejemplos de Uso
+
 Creación de Instancias
+
+# Crear instancias de jugadores y equipos
+jugador1 = Jugador("Juan", "Pérez", "123", 25, "M", "555-1234", "Equipo A", True)
+jugador2 = Jugador("Pedro", "Gómez", "124", 24, "M", "555-5678", "Equipo A", True)
+jugador3 = Jugador("Luis", "Martínez", "125", 26, "M", "555-9101", "Equipo B", True)
+jugador4 = Jugador("Carlos", "López", "126", 27, "M", "555-1122", "Equipo B", True)
+
+equipo1 = Equipo("Equipo A", "001")
+equipo2 = Equipo("Equipo B", "002")
+
+# Crear campeonatos
+campeonato1 = Campeonato("Campeonato 1", date(2024, 1, 1), date(2024, 12, 31))
+campeonato2 = Campeonato("Campeonato 2", date(2024, 6, 1), date(2024, 11, 30))
+
+# Crear administrador
+administrador1 = Administrador("Ana", "Gómez", "456", 30, "F", "555-5678")
+
+# Agregar equipos a campeonatos
+administrador1.agregar_equipo(equipo1, campeonato1)
+administrador1.agregar_equipo(equipo1, campeonato2)  
+administrador1.agregar_equipo(equipo2, campeonato1)
+administrador1.agregar_equipo(equipo2, campeonato2)
+
+# Agregar jugadores a equipos
+administrador1.agregar_jugador(jugador1, equipo1)
+administrador1.agregar_jugador(jugador2, equipo1)
+administrador1.agregar_jugador(jugador3, equipo2)
+administrador1.agregar_jugador(jugador4, equipo2)
+
+# Crear encuentros
+encuentro1 = Encuentro(equipo1, equipo2, 2, 2) 
+encuentro2 = Encuentro(equipo1, equipo2, 1, 3) 
+
+# Registrar resultados
+encuentro1.registrar_resultado()
+encuentro2.registrar_resultado()
+
+# Calcular y mostrar posiciones
+campeonato1.calcular_posiciones()
+campeonato2.calcular_posiciones()
+
 
