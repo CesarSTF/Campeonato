@@ -5,9 +5,11 @@
 ![image](https://github.com/user-attachments/assets/664da0a9-48ad-4ccf-8af4-10066b3ce877)
 
 Sistema de Campeonatos Deportivos
+
 Este proyecto es un sistema que soporta campeonatos deportivos, considerando deportes en equipo e individuales, inscripción en campeonatos, estadísticas (como tabla de posiciones y estadísticas individuales) y diferentes sistemas de campeonatos (ejemplo: liga, muerte súbita, grupos).
 
 Clases y Enumeraciones
+
 Persona (Abstract Class)
 Descripción: Clase base abstracta para representar a una persona en el sistema.
 
